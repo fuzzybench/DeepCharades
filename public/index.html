@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>DEEP CHARADES</h1>
+    <div id="score">Score: 0</div>
+  </header>
+  <div>
+    <h3 class="hint">Guess the 2 Nouns That Made the AI Image Before the Timer Runs Out!</h3>
+  </div>
+  <main>
+    <div class="carousel">
+      <div id="imageCounter" class="image-counter"></div>
+      <img id="currentImage" class="carousel-image" src="" alt="Image to guess" />
+      <div id="correctAnswer" class="correct-answer"></div>
+      <div class="buttons-container">
+        <button id="prevImage" class="button">Previous</button>
+        <button id="nextImage" class="button">Next</button>
+      </div>
+    </div>
+    <div class="guess">
+      <form id="guessForm">
+        <input type="text" id="guessInput" placeholder="Your guess">
+        <button id="submitGuess" class="button">Submit</button>
+      </form>
+    </div>
+    <div id="timer">Time left: 300s</div>
+    <div id="gameOver" class="hidden">
+      <h2>Game Over!</h2>
+      <p>Your score: <span id="finalScore"></span></p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

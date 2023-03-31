@@ -1,0 +1,113 @@
+body {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff9800;
+  color: #FFFFFF;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0;
+}
+
+.hint {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: 600;
+  font-size: 24px;
+  color: #4caf50;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.carousel-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.guess {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#timer {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #f44336;
+}
+
+.hidden {
+  display: none;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #3f8e4c;
+}
+
+#leaderboard {
+  text-align: center;
+}
+
+.image-counter {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.correct-answer {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+  display: none;
+}
+
+@media (max-width: 300px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
